@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  rce-deploy:
+    image: rce-deploy
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 55655:5000
+    environment:
+      - FLAG=flag{blacklisting_is_not_a_good_idea_b29wc2ll}

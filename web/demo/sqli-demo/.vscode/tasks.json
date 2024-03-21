@@ -1,0 +1,46 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Execute current shell script",
+			"type": "shell",
+			"command": "${relativeFile}",
+			"problemMatcher": []
+		},
+		{
+			"type": "docker-build",
+			"label": "docker-build",
+			"platform": "python",
+			"dockerBuild": {
+				"tag": "sqlidemo:latest",
+				"dockerfile": "${workspaceFolder}/Dockerfile",
+				"context": "${workspaceFolder}",
+				"pull": true
+			}
+		},
+		{
+			"type": "docker-run",
+			"label": "docker-run: debug",
+			"dependsOn": [
+				"docker-build"
+			],
+			"dockerRun": {
+				"env": {
+					"FLASK_APP": "sqli.py"
+				}
+			},
+			"python": {
+				"args": [
+					"run",
+					"--no-debugger",
+					"--no-reload",
+					"--host",
+					"0.0.0.0",
+					"--port",
+					"5000"
+				],
+				"module": "flask"
+			}
+		}
+	]
+}

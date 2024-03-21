@@ -1,0 +1,7 @@
+version: '2.4'
+services:
+  a_fugalicious_flag:
+    build: ./deploy
+    ports:
+      - 57812:5000
+    privileged: true

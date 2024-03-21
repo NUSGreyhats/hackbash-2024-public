@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  to_not_kill_a_canary:
+    build: deploy
+    ports:
+      - 55435:5000
+    read_only: true
+    privileged: true

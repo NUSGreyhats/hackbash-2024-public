@@ -1,0 +1,3 @@
+Within this system, lies a vulnerable SUID program.
+
+Find it, and pwn it to read /flag.txt

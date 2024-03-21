@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  profile-picture:
+    image: profile-picture
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "55677:80"
+
+networks:
+  profile-picture:
+    driver: bridge
+    driver_opts:
+        com.docker.network.driver.mtu: 1400

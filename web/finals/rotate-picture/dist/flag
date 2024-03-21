@@ -1,0 +1,1 @@
+On the server, this flag will contain the real flag. You will have to get it by running the command "/readflag GIVEFLAGPLS" on the server using the vulnerability you have identified, which will output the flag

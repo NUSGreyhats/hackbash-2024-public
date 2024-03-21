@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  baby-rsa-bleichenbacker:
+    build: deploy
+    ports:
+      - 55002:9999
+    read_only: true
+    privileged: true

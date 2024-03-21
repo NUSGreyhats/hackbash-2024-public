@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  give_it_your_all:
+    build: deploy
+    ports:
+      - 55433:5000
+    read_only: true
+    privileged: true

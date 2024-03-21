@@ -1,0 +1,9 @@
+version: "3"
+services:
+  chall:
+    build: .
+    restart: always 
+    environment:
+      - FLAG=flag{c00ki3_m0nst3r}
+    ports:
+      - 61777:3000

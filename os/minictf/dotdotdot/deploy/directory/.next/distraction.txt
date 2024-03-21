@@ -1,0 +1,1 @@
+if -- is used to pass arguments, and ur file is also named -- then what to do XD

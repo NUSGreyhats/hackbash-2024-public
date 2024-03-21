@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  sqlidemo:
+    image: sqlidemo
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 61002:5000

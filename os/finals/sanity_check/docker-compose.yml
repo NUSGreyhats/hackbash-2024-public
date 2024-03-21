@@ -1,0 +1,7 @@
+version: '2.4'
+services:
+  sanity_check:
+    build: ./deploy
+    ports:
+      - 57512:5000
+    privileged: true

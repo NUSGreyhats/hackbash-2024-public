@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Cookie Store</title>
+</head>
+<body>
+<nav class="container-fluid">
+    <ul>
+        <li><strong>Cookie Store</strong></li>
+    </ul>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login.html">Login</a></li>
+        <li><a href="/register.html" role="button">Register</a></li>
+    </ul>
+</nav>
+<main class="container">
+    <div class="grid">
+        <section>
+            <hgroup>
+                <h2>Welcome Back!</h2>
+                <h3>Here you can find your flag.</h3>
+            </hgroup>
+            <hgroup>
+                <h4>Flag: </h4>
+                <p id="flag"></p>
+            </hgroup>
+        </section>
+    </div>
+    <script>
+        (async () => {
+            const auth = await fetch('/api/auth');
+            if (auth.status !== 200) {
+                window.location.href = '/login.html';
+            }
+
+            const response = await fetch('/api/flag');
+            if (response.status === 200) {
+                document.getElementById('flag').textContent = await response.text();
+            } else {
+                document.getElementById('flag').textContent = 'You are not authorized to view this content.';
+            }
+        })();
+    </script>
+</main>
+</body>
+</html>

@@ -1,0 +1,143 @@
+version: '3.1'
+
+services:
+  snek-team-1:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57514:5000
+    environment:
+      - PASSWORD=398041904e6201bfc12e
+  snek-team-2:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57515:5000
+    environment:
+      - PASSWORD=9f3e85750a642d5ecbca
+  snek-team-3:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57516:5000
+    environment:
+      - PASSWORD=65f0b21b1cfc72928195
+  snek-team-4:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57517:5000
+    environment:
+      - PASSWORD=d95c236eeeae4c337431
+  snek-team-5:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57518:5000
+    environment:
+      - PASSWORD=02a1a4ae6f07904a2b11
+  snek-team-6:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57519:5000
+    environment:
+      - PASSWORD=ce8b6a1d5b28dd0bd6f3
+  snek-team-7:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57520:5000
+    environment:
+      - PASSWORD=7a5ab4da5c832b33ce2e
+  snek-team-8:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57521:5000
+    environment:
+      - PASSWORD=211689dfad424f4ed0fe
+  snek-team-9:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57522:5000
+    environment:
+      - PASSWORD=92d69ca99d545041b2fd
+  snek-team-10:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57523:5000
+    environment:
+      - PASSWORD=15376e8361361cf48af2
+  snek-team-11:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57524:5000
+    environment:
+      - PASSWORD=a6c235916741f2ee85d7
+  snek-team-12:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57525:5000
+    environment:
+      - PASSWORD=91ffcf8ce19214ff3624
+  snek-team-13:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57526:5000
+    environment:
+      - PASSWORD=7fdaf80c20b6d1c6f3e0
+  snek-team-14:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57527:5000
+    environment:
+      - PASSWORD=763506274bd667c692de
+  snek-team-15:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57528:5000
+    environment:
+      - PASSWORD=4d62ef9bcaf1508d0640
+  snek-team-16:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57529:5000
+    environment:
+      - PASSWORD=73165da34dacad5743f6
+  snek-team-17:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57530:5000
+    environment:
+      - PASSWORD=10b8cefdaafa7f9f8ff0
+  snek-team-18:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57531:5000
+    environment:
+      - PASSWORD=48678efd9354a9ec2ec8
+  snek-team-19:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57532:5000
+    environment:
+      - PASSWORD=919e4feada1d408fb4ea
+  snek-team-20:
+    build: ./deploy
+    hostname: snek
+    ports:
+      - 57533:5000
+    environment:
+      - PASSWORD=ab5be1373274fdc10a42

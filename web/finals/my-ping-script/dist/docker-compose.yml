@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  rce:
+    image: rce
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 55655:5000
+    environment:
+      - FLAG=flag{not_real_flag}

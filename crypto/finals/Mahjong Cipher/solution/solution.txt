@@ -1,0 +1,5 @@
+1. Decode the tiles to reveal the cipher text, iodj{brxwuxobduhdpdkmrqjpdvwhu}
+
+2. Decode with Caesar Cipher to get flag
+
+Flag: flag{youtrulyareamahjongmaster}
