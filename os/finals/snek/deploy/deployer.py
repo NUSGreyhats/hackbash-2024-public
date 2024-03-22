@@ -14,10 +14,6 @@ def alarm_handler(signum, frame):
 
 def main():
 
-    if input("provide your team's password: ") != os.getenv("PASSWORD"):
-        print("wrong password!")
-        return
-
     username = token_hex(6)
     jail = f"/home/{username}"
     if os.path.exists(f"/home/{username}"):
